@@ -54,8 +54,6 @@
           }
         ] 
       }
-        ]
-      }
     ],
     "day": [
         {
@@ -87,7 +85,8 @@
             "performance": 49.2
           }
         ] 
-      },{
+      },
+      {
         "timestamp": "2011-07-18 13:55:29 +0100",
         "students": [
           {
@@ -104,9 +103,11 @@
           },
           {
             "netID": "snadeem2",
-            "performance": 100 
+            "performance": 28 
           }
         ] 
       }
-        ]
-      }
+    ]
+}
+]
+}
