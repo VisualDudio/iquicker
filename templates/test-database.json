@@ -1,0 +1,112 @@
+
+{
+"classes": [
+  {
+    "day": [
+        {
+      "timestamp": "2011-07-13 13:55:29 +0100",
+      "students": [
+          {
+            "netID": "sraj6",
+            "performance": 87.6 
+          },
+          {
+            "netID": "aishikg2",
+            "performance": 67.344
+          },
+          {
+            "netID": "elainew2",
+            "performance": 47.9 
+          }
+        ]
+      },
+      {
+        "timestamp": "2011-07-14 13:55:29 +0100",
+        "students": [
+          {
+            "netID": "sraj6",
+            "performance": 6 
+          },
+          {
+            "netID": "aishikg2",
+            "performance": 94.78
+          },
+          {
+            "netID": "elainew2",
+            "performance": 49.2
+          }
+        ] 
+      },
+      {
+        "timestamp": "2011-07-16 13:55:29 +0100",
+        "students": [
+          {
+            "netID": "sraj6",
+            "performance": 100.0
+          },
+          {
+            "netID": "aishikg2",
+            "performance": 98.6
+          },
+          {
+            "netID": "elainew2",
+            "performance": 100 
+          }
+        ] 
+      }
+        ]
+      }
+    ],
+    "day": [
+        {
+      "timestamp": "2011-07-13 13:55:29 +0100",
+      "students": [
+          {
+            "netID": "awaseem2",
+            "performance": 95
+          },
+          {
+            "netID": "kukadia2",
+            "performance": 67.344  
+          }
+        ]
+      },
+      {
+        "timestamp": "2011-07-17 13:55:29 +0100",
+        "students": [
+          {
+            "netID": "awaseem2",
+            "performance": 6 
+          },
+          {
+            "netID": "kukadia2",
+            "performance": 93 
+          },
+          {
+            "netID": "mbarki2",
+            "performance": 49.2
+          }
+        ] 
+      },{
+        "timestamp": "2011-07-18 13:55:29 +0100",
+        "students": [
+          {
+            "netID": "awaseem2",
+            "performance": 100.0  
+          },
+          {
+            "netID": "kukadia2",
+            "performance": 95.6
+          },
+          {
+            "netID": "mbarki2",
+            "performance": 100  
+          },
+          {
+            "netID": "snadeem2",
+            "performance": 100 
+          }
+        ] 
+      }
+        ]
+      }
