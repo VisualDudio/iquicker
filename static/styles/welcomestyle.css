@@ -11,10 +11,6 @@ body {
     padding: 16px;
 }
 
-.w3-row {
-    padding: 16px;
-}
-
 .center {
     display: block;
     margin: auto;
@@ -51,23 +47,4 @@ button {
 
  button:hover {
      opacity: 0.8;
- }
-
-input {
-     font-family: "Century Gothic";
-     font-size: 55px;
-     text-align: center;
-     color: #7a7a7a;
-     padding: 14px 20px;
-     border: none;
-     width: 27%;  
-     display: block;    
-     margin: 10px auto 10px auto;
-     border: 2px solid #7a7a7a;
-     border-radius: 12px;
-     background-color: #EBEBEB;
- }
-
- .submit {
-    background-color: #355c7d;    
  }

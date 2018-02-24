@@ -2,17 +2,9 @@ body {
     background-color: #EBEBEB;
 }
 
-.logocontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
 .container {
     padding: 16px;
-}
-
-.w3-row {
-    padding: 16px;
+    margin-top: 220px; 
 }
 
 .center {
@@ -23,13 +15,13 @@ body {
 p {
     text-align: center;
     font-size: 50px;
-    color: #7a7a7a;
+    color: #9e9d9d;
     margin: 5px 20px 35px 20px;
 }
 
 button {
     font-family: "Century Gothic"; 
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     padding: 14px 20px;
     border: none;
@@ -40,34 +32,29 @@ button {
     border-radius: 12px;
 }
 
-.student {
-    background-color: #355c7d;
-    
- }
-
- .teacher {
-    background-color: #EF476F;
- }
-
  button:hover {
      opacity: 0.8;
  }
 
-input {
-     font-family: "Century Gothic";
-     font-size: 55px;
-     text-align: center;
-     color: #7a7a7a;
-     padding: 14px 20px;
-     border: none;
-     width: 27%;  
-     display: block;    
-     margin: 10px auto 10px auto;
-     border: 2px solid #7a7a7a;
-     border-radius: 12px;
-     background-color: #EBEBEB;
+ .submit {
+    background-color: #EF476F;    
+    position: absolute;
+    bottom: 10px; 
+    right: 20px;
  }
 
- .submit {
-    background-color: #355c7d;    
+ .generate {
+    background-color: #355C7D;
  }
+
+ .codeoutput {
+     font-family: "Century Gothic";
+     border: 2px solid #7a7a7a;
+     font-size: 55px;
+     width: 27%;
+     display: block;    
+     margin: 10px auto 10px auto;
+     border-radius: 12px;
+     padding: 14px 20px;
+     text-align: center;
+}

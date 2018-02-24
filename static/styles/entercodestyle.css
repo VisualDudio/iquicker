@@ -11,10 +11,6 @@ body {
     padding: 16px;
 }
 
-.w3-row {
-    padding: 16px;
-}
-
 .center {
     display: block;
     margin: auto;
@@ -23,7 +19,7 @@ body {
 p {
     text-align: center;
     font-size: 50px;
-    color: #7a7a7a;
+    color: #9e9d9d;
     margin: 5px 20px 35px 20px;
 }
 
@@ -39,15 +35,6 @@ button {
     margin: 10px auto 10px auto;
     border-radius: 12px;
 }
-
-.student {
-    background-color: #355c7d;
-    
- }
-
- .teacher {
-    background-color: #EF476F;
- }
 
  button:hover {
      opacity: 0.8;
