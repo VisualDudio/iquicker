@@ -15,24 +15,41 @@
 <style type="text/css">
 body,td,th {
 	font-family: "Century Gothic";
+	font-size: 24px;
+}
+#apDiv2 {
+	position: absolute;
+	width: 200px;
+	height: 35px;
+	z-index: 2;
+	left: 464px;
+	top: 13px;
 }
 </style>
 <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
 </head>
 
 <body>
-<div id="apDiv1">Enter your class code : <span id="sprytextfield1">
+<div id="apDiv1">
+Enter your class code :
+
+<span id="sprytextfield1">
   <label for="Text for code"></label>
   <input type="text" name="Text for code" id="Text for code" />
-  <input type="submit" name="Submit" id="Submit" value="Submit Code" />
   <span class="textfieldRequiredMsg">A value is required.</span></span>
   <form id="form1" name="form1" method="post" action="">
   </form>
   <p>&nbsp;</p>
+</div>
+<div id="apDiv2">
+  <form id="form2" name="form2" method="post" action="">
+    
+      <input type="submit" name="Submit" id="Submit" value="Submit" />
+    </label>
+  </form>
 </div>
 <script type="text/javascript">
 var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
 </script>
 </body>
 </html>
-
