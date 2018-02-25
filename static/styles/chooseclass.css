@@ -1,0 +1,216 @@
+.mainLoginInput::-webkit-input-placeholder {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.mainLoginInput:-moz-placeholder {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+body {
+    font-family: "Century Gothic";
+    background-color: #EBEBEB;
+}
+
+input[type=text], input[type=text] {
+    font-size: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    font-family: "Century Gothic"; 
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer; 
+    display: block;
+    margin: 10px auto 10px auto;
+    border-radius: 12px;
+}
+
+.add {
+    background-color: #9D44B5;
+    width: 30%;
+    font-size: 35px;
+}
+
+.submit {
+    background-color: #06D6A0;
+    width: 20%;
+    font-size: 25px;
+}
+
+button:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 30px #505050;    
+}
+
+.container {
+    font-size: 25px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 7% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 65%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #EF476F ;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+
+.selection {
+    font-family: "Century Gothic";
+    font-size: 55px;
+    color: #EBEBEB;
+    width: 40%;
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #7a7a7a;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+} 
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 0 0;
+    position: relative;
+}
+
+.container {
+    padding: 20px;
+    margin-top: 100px; 
+}
+
+.modalcontainer {
+    padding: 20px;
+    margin-top: 45px;
+}
+
+.classescontainer {
+    padding: 8px;
+}
+
+
+.classes {
+    font-family: "Century Gothic";
+    font-size: 35px;
+    width: 50%;
+    display: block;    
+    margin: auto;
+    text-align: center;
+    color: #7a7a7a;
+}
+
+p {
+    text-align: center;
+    font-size: 35px;
+    color: #7a7a7a;
+}
+
+a.addcourselink:link {
+    color: #EF476F;
+    text-decoration: none;
+}
+
+a.addcourselink:visited {
+    color: #EF476F;
+    text-decoration: none;
+}
+
+a.addcourselink:hover {
+    text-decoration: underline;
+    color: rgb(247, 107, 139);
+    background-color: none;
+}
+
+a:link {
+    color: #7a7a7a;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #7a7a7a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #9e9d9d ;
+    background-color: transparent;
+}

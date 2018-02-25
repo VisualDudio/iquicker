@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>I>Quicker</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ url_for('static',filename='chooseclass.js') }}" type="text/javascript"></script>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/chooseclass.css') }}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div class="container">
+        <div class="selection">Select Course</div>
+    </div>
+
+<button onclick="document.getElementById('id01').style.display='block'" type="button" class="add">Add Course</button>
+
+<div id="courses" class="classescontainer">
+        <p><a class="course" href = "/controlsession">CS 173: Discrete Structures</a></p>
+        <p><a class="course" href = "/controlsession">CS 126: Software Design Studio</a></p>
+        <p><a class="course" href = "/controlsession">MATH 415: Linear Algebra</a></p>
+        <p><a class="course" href = "/controlsession">PHYS 212: Electricity &amp; Magnetisim</a></p>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Window">&times;</span>
+    </div>
+
+    <div class="modalcontainer">
+      <label for="crn"><b>CRN</b></label>
+      <input class="mainLoginInput" type="text" placeholder="Enter Course Number" name="crn" required>
+
+      <label for="title"><b>Title</b></label>
+      <input class="mainLoginInput" type="text" placeholder="Enter Course Title" name="title" required>
+        
+      <button onclick="document.getElementById('id01').style.display='none'" type="button" class="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

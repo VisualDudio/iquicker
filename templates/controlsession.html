@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>I>Quicker</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="{{ url_for('static',filename='controlsession.js') }}" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/controlsession.css') }}">
+</head>
+
+<body>
+    <div id="header">
+        <div id="sessioncode">
+            Code: {{ code }}
+        </div>
+    </div>
+
+    <div id="topleftbox">
+        <div id="playpausebutton" class="play"></div>
+
+        <div id="timer">
+            0:00
+        </div>
+    </div>
+
+    <div id="chart-wrapper">
+        <canvas id="chart" width="600" height="400"></canvas>
+    </div>
+
+    <button onclick="location.href = '/chooseclass';" type="button" id="endsession">
+        End Session
+    </button>
+
+    <button onclick="location.href = '/controlsession';" type="button" id="nextquestion">Next Question</button>
+
+</body>
+
+</html>

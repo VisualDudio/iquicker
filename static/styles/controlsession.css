@@ -1,0 +1,104 @@
+body {
+    background-color: #EBEBEB;
+    margin: 25px;
+}
+
+#playpausebutton {
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-top: 2px;
+    width: 40px;
+    height: 35px;
+}
+
+.play {
+    background-image: url("assets/play.png");
+}
+
+.stop {
+    background-image: url("assets/stop.png");
+}
+
+#timer {
+    font-size: 35px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#chart {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#nextquestion {
+    background-color: #355C7D;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-family: "Century Gothic";
+    font-size: 50px;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    display: block;
+    margin: 10px auto 10px auto;
+    border-radius: 12px;
+}
+
+#endsession {
+    background-color: none;
+    border: 2px solid #c12424;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-family: "Century Gothic";
+    font-size: 50px;
+    color: #c12424;
+    padding: 14px 20px;
+    cursor: pointer;
+    width: 30%;
+    display: block;
+    margin: 10px auto 10px auto;
+    border-radius: 12px;
+}
+
+#header {
+    margin-top: 100px; 
+}
+
+#sessioncode {
+    font-family: "Century Gothic";
+    font-size: 55px;
+    color: #EBEBEB;
+    width: 40%;
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #7a7a7a;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#topleftbox {
+    border: 2px solid #7a7a7a;
+    width: 13%;
+}

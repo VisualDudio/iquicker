@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>I>Quicker</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ url_for('static',filename='chooseanswer.js') }}" type="text/javascript"></script>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/chooseanswer.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="classroom">Classroom Name</div>
+        <button id="a" type="button" class="answer">A</button>
+        <button id="b" type="button" class="answer">B</button>
+        <button id="c" type="button" class="answer">C</button>
+        <button id="d" type="button" class="answer">D</button>
+        <button id="e" type="button" class="answer">E</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>I>Quicker</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ url_for('static',filename='joinsession.js') }}" type="text/javascript"></script>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/joinsession.css') }}">
+</head>
+
+<body>
+    <div class="logocontainter">
+        <img src="static\styles\assets\logocropped.png" class="center">
+    </div>
+
+    <div class="container">
+        <input class="code" type="text" onkeyup="this.value=this.value.replace( /[^\d]+/,'')" placeholder="Enter Code" maxlength="4"></form>
+        <button onclick="location.href = '/chooseanswer';" type="button" class="submit">Submit</button>
+    </div>
+</body>
+</html>

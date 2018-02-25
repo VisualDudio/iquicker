@@ -4,12 +4,15 @@ var labels = ["A", "B", "C", "D", "E"];
 var resultsBarGraph;
 var resultsLookup = {};
 
+var seconds = 00; 
+var tens = 00;
+var Interval;
+
 function initializeBarGraph() {
     var barData = {
         labels : labels,
         datasets : [
         {
-            backgroundColor: ["red", "red", "red", "red", "red"],
             data : [0, 0, 0, 0, 0]
         }
         ]
@@ -34,29 +37,39 @@ function initializeBarGraph() {
 
 function onBarClick(e) {
     var activeBars = resultsBarGraph.getBarsAtEvent(e);
-    activeBars[0].backgroundColor[activeBars.index] = "green";
+    //TODO: change color of selected bar
     resultsBarGraph.update();
 };
 
 $(document).ready(function() {
-    /*socket = io.connect('http://' + document.domain + ':' + location.port);
-    socket.emit('joined');
+    socket = io.connect('http://' + document.domain + ':' + location.port);
     
     initializeBarGraph();
-
-    $('.answer').on('click', function(e) {
-        data = {
-            netid: "",
-            answer: $(e.target).attr('id').toUpperCase()
-        }
-        socket.emit('answer', data);
-    });
     
     $('#chart').on('click', onBarClick);
 
+    $('#nextquestion').on('click', function() {
+        window.location.href = '/controlsession';
+        socket.emit('new-question');
+    });
+
+    $('#playpausebutton').on('click', function() {
+        $('#playpausebutton').toggleClass('stop');
+        if ($('#playpausebutton').hasClass('stop')) {
+            socket.emit('open-question');
+        } else {
+            socket.emit('close-question');
+        }
+    });
+
     socket.on('answer', function(data) {
+        var prevIndex = labels.indexOf(data.previousAnswer);
         var index = labels.indexOf(data.answer);
         resultsBarGraph.datasets[0].bars[index].value += 1;
+        if (prevIndex != -1 && resultsBarGraph.datasets[0].bars[prevIndex].value != 0) {
+            resultsBarGraph.datasets[0].bars[prevIndex].value -= 1;
+        }
+        
         resultsBarGraph.update();
-    });*/
+    });
 });

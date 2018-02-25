@@ -1,0 +1,75 @@
+body {
+    background-color: #EBEBEB;
+}
+
+.container {
+    padding: 16px;
+    margin-top: 155px; 
+}
+
+.chosen {
+    opacity: 1.0;
+}
+
+button {
+    font-family: "Century Gothic"; 
+    font-size: 50px;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;  
+    display: block;
+    margin: 10px auto 10px auto;
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+button:hover {
+    box-shadow: 0 0 30px #505050;
+     /* opacity: 1; */
+}
+
+.classroom {
+     font-family: "Century Gothic";
+     font-size: 55px;
+     color: #EBEBEB;
+     width: 40%;
+     padding: 14px 20px;
+     text-align: center;
+     background-color: #7a7a7a;
+     border-bottom-right-radius: 12px;
+     border-bottom-left-radius: 12px;
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     margin: auto;
+}
+
+#a {
+    background-color: #06be8d;
+    /* opacity: 0.6; */
+}
+
+#b {
+    background-color: #f5b82a;
+    /* opacity: 0.6; */
+}
+
+#c {
+    background-color: #EF476F;
+    /* opacity: 0.6; */
+}
+
+#d {
+    background-color: #9D44B5;
+    /* opacity: 0.6; */
+}
+
+#e {
+    background-color: #355C7D;
+    /* opacity: 0.6; */
+}
